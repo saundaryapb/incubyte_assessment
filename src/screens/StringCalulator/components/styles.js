@@ -114,6 +114,17 @@ export const formStyles = {
     cursor: 'pointer',
     transition: 'background-color 0.2s ease-in-out, transform 0.1s ease-in-out',
     minWidth: '120px'
+  },
+  
+  error: {
+    marginTop: '8px',
+    padding: '8px 12px',
+    backgroundColor: '#fee2e2',
+    border: '1px solid #fecaca',
+    borderRadius: '4px',
+    color: '#dc2626',
+    fontSize: '14px',
+    fontWeight: '500'
   }
 };
 

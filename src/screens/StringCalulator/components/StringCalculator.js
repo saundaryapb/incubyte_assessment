@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Result } from "../containers";
 import { stringCalculatorStyles } from "./styles";
 
-const StringCalculator = () => {
+const StringCalculator = ({ value, result, error, handleSubmit, handleChange }) => {
    const { container, card, header, title, subtitle, content } = stringCalculatorStyles;
 
    return (
@@ -13,8 +13,13 @@ const StringCalculator = () => {
                <h3 style={subtitle}>Incubyte Assessment by Saundarya Prakash</h3>
             </div>
             <div style={content}>
-               <Form />
-               <Result />
+               <Form 
+                  value={value}
+                  error={error}
+                  handleSubmit={handleSubmit}
+                  handleChange={handleChange}
+               />
+               <Result result={result} />
             </div>
          </div>
       </div>
