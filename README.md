@@ -16,16 +16,27 @@ The assessment requires implementing a String Calculator following TDD principle
 
 ## Project Structure
 
+> **Note**: This is not the final project structure. This is the basic setup. Once the project is completed, the final structure will be updated and this comment will be removed.
+
 ```
 src/
-├── components/
-│   ├── StringCalculator.js      # Main calculator logic
-│   └── StringCalculatorUI.js    # React UI component
-├── __tests__/
-│   ├── StringCalculator.test.js # Unit tests for calculator logic
-│   └── StringCalculatorUI.test.js # Tests for UI component
 ├── App.js                       # Main app component
-└── index.js                     # Entry point
+├── index.js                     # Entry point
+├── setupTests.js                # Test setup configuration
+└── screens/
+    ├── index.js                 # Screen exports
+    └── StringCalulator/
+        ├── index.js             # String Calculator screen
+        ├── components/
+        │   ├── index.js         # Component exports
+        │   ├── Form.js          # Input form component
+        │   ├── Result.js        # Result display component
+        │   └── StringCalculator.js # Main calculator logic
+        └── containers/
+            ├── index.js         # Container exports
+            ├── Form.js          # Form container logic
+            ├── Result.js        # Result container logic
+            └── StringCalculator.js # Calculator container
 ```
 
 ## TDD Approach
