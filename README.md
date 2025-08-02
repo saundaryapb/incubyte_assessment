@@ -20,6 +20,7 @@ The assessment requires implementing a String Calculator following TDD principle
 
 ```
 src/
+├── App.css                      # Styling and fonts
 ├── App.js                       # Main app component
 ├── index.js                     # Entry point
 ├── setupTests.js                # Test setup configuration
@@ -31,7 +32,9 @@ src/
         │   ├── index.js         # Component exports
         │   ├── Form.js          # Input form component
         │   ├── Result.js        # Result display component
-        │   └── StringCalculator.js # Main calculator logic
+        │   ├── StringCalculator.js # Main calculator UI component
+        │   ├── styles.js        # Component styling definitions
+        │   └── constants.js     # Static data and enums
         └── containers/
             ├── index.js         # Container exports
             ├── Form.js          # Form container logic
